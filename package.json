@@ -1,0 +1,13 @@
+{
+  "name": "llm-gateway",
+  "version": "1.0.0",
+  "description": "Self-hosted gateway for OpenAI, Anthropic and Amazon Bedrock: per-client keys, budgets, usage rules, cost tracking and an admin panel.",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test proxy/test/*.test.mjs cliente/test/*.test.mjs",
+    "env": "node tools/generar-env.mjs http://localhost:8740"
+  },
+  "engines": { "node": ">=22" }
+}
